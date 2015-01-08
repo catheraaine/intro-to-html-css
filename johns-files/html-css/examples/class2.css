@@ -1,0 +1,91 @@
+body {
+    font-family: "Helvetica", sans-serif;
+    font-size: 13px;
+}
+
+.fun {
+    color: yellow;
+}
+
+.john-img {
+    transform:rotate(-7deg);
+    -webkit-transform: rotate(7deg);
+}
+
+.warning {
+    color: red;
+    font-weight: bold;
+    font-family: "Georgia", serif;
+    background-color: pink;
+    border: 1px dashed red;
+}
+
+#super-warning {
+    font-size: 24px;
+    border: 1px solid red;
+    font-family: "Arial";
+}
+
+.footer {
+    text-align: center;
+}
+
+.framed {
+    border: 7px solid green;
+}
+
+a {
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*body {
+    font-family: Georgia, serif;
+}
+
+p {
+    color: red;
+}
+
+#welcome {
+    font-family: Helvetica;
+    color: blue;
+}
+
+.huge {
+    font-size: 300%;
+}
+
+.framed {
+    border-width: 20px;
+    border-style: solid;
+    border-color: gray;
+}
+
+.warning {
+    color: red;
+    font-weight: bold;
+    border: 1px solid red;
+    padding: 15px;
+}
+
+.success {
+    color: green;
+    font-weight: bold;
+    border: 1px solid green;
+    padding: 15px;
+}*/

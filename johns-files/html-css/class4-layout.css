@@ -1,0 +1,72 @@
+.mainbody {
+	width: 800px;
+	margin-left: auto;
+	margin-right: auto;
+	font-family: Gotham, Georgia, serif;
+
+	border: 1px solid black;
+}
+.header {
+	text-align: center;
+	height: 70px;
+}
+
+.navigation {
+	width: 25%;
+	float: left;
+}
+
+.content {
+	float: left;
+	width: 70%;
+}
+
+.footer {
+	clear: left;
+	width: 100%;
+	height: 50px;
+	text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*.mainbody {
+	margin-left: auto;
+	margin-right: auto; 
+	width: 960px;
+	font-family: Arial, sans-serif;
+	font-size: 18px;
+}
+.header {
+	border: 1px solid black;
+	width: 100%;
+	height: 100px;
+}
+.navigation { 
+	width: 30%; 
+	height: 400px; 
+	float: left;
+}
+.content { 
+	width: 70%; 
+	float: left; 
+	height: 400px;
+}
+.footer {
+	width: 100%;
+	height: 70px;
+	text-align: center;
+}
+*/
