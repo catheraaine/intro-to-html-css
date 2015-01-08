@@ -1,0 +1,62 @@
+/*
+
+Pink - #f05b62
+Blue - #01a9b4
+White - #FFFFFF
+Dark Grey - #424242
+Black - #000000
+
+ */
+
+body {
+	background-color: #424242;
+	color: #f05b62;
+	font-family: 'Source Sans Pro', Arial, sans-serif;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 3%;
+	width: 80%;
+	font-size: 105%;
+}
+
+p {
+	color: #FFFFFF;
+}
+
+a:link{
+	text-decoration: none;
+	color: #01a9b4;
+}
+a:visited{
+	color: #f05b62;
+}
+a:hover{
+	color: #f05b62;
+	font-style: italic;
+}
+
+a:active{
+	color: #FFFFFF;
+
+}
+.sidebar {
+	width: 30%;
+	float: left;
+}
+
+.text-body{
+	margin-left: auto;
+	margin-right: auto;
+	padding-top: 3%;
+	float: right;
+	width: 70%;
+}
+
+.gdicincy {
+	float: left;
+	width: 213px;
+	height: 213px;
+	margin-top: 5%;
+}
+
+
