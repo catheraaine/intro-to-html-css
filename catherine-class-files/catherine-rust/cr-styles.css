@@ -2,6 +2,7 @@
 
 Pink - #f05b62
 Blue - #01a9b4
+Grey-Blue - #01656a
 White - #FFFFFF
 Dark Grey - #424242
 Black - #000000
@@ -28,7 +29,7 @@ a:link{
 	color: #01a9b4;
 }
 a:visited{
-	color: #f05b62;
+	color: #01a9b4;
 }
 a:hover{
 	color: #f05b62;
@@ -39,9 +40,25 @@ a:active{
 	color: #FFFFFF;
 
 }
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
 .sidebar {
-	width: 30%;
+	width: 215px;
 	float: left;
+	text-align: left;
+	font-size: 110%;
+
+}
+
+.sidebar a{
+	margin-left: 30px;
+	display: block;
+	padding-top: 10px;
 }
 
 .text-body{
@@ -58,5 +75,7 @@ a:active{
 	height: 213px;
 	margin-top: 5%;
 }
+
+
 
 
