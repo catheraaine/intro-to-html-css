@@ -90,16 +90,17 @@
         <section>
           <h3>History of HTML</h3>
           <ul>
-            <li class="fragment">Invented by Tim Berners-Lee (sorry, Eric, not Al Gore)</li>
-            <li class="fragment">Al Gore was on 30 Rock a couple times though.</li>
+            <li class="fragment">Invented by Tim Berners-Lee</li>
             <li class="fragment">Created "hypertext" to share scientific papers</li>
             <li class="fragment">First web page August 6, 1991</li>
-            <li class="fragment">Standardized by w3 Consortium (pack of super nerds)</li>
+            <li class="fragment">Standardized by w3 Consortium: <br> 
+              <a href="http://www.w3schools.com/" target="_blank">w3schools.com</a>
+            </li>
           </ul>
         </section>
         
         <section>
-          <h3>History of HTML</h3>
+          <h3>More History of HTML</h3>
           <ul>
             <li class="fragment"><span class="yellow">H</span>yper<span class="yellow">T</span>ext <span class="yellow">M</span>arkup <span class="yellow">L</span>anguage</li>
             <li class="fragment">Early 90s</li>
@@ -135,7 +136,7 @@
         <!-- Nitty gritty 1 - Clients and servers -->
         <section>
           <h3>Clients and servers</h3>
-          <p>How your computer accesses websites</p>
+          <p>How your computer accesses websites:</p>
           <img src="images/client-server.png"/>
         </section>
         
@@ -158,7 +159,7 @@
               <div>TextWrangler - Mac</div>
               <div>Notepad ++ - Windows</div>
               <div>gedit - Linux</div>
-              <div><span class="blue">John's Choice:</span><br>Sublime Text 2 - Linux, Mac, Windows</div>
+              <div><span class="green">GDI Cincy Recomends:</span><br><a href="http://www.sublimetext.com/2" target="_blank">Sublime Text 2</a> - Linux, Mac, Windows</div>
              </li>
           </ul>
         </section>
@@ -170,7 +171,7 @@
           <div><span class="blue">+ HTML: </span>Structure/Content</div>
           <div><span class="blue">+ CSS: </span>Presentation</div>
           <div class="blue">= Your Website</div>
-          <p>A website is a way to present your content to the world, using HTML and CSS to present that content &amp; make it look good.</p>
+          <p>A website is a way to present your content to the world, using HTML and CSS to display that content &amp; make it look good.</p>
         </section>
 
         <section>
@@ -182,18 +183,20 @@
         
         <section>
           <h3>Anatomy of a website</h3>
-          <div class="yellow"> Concrete example</div>
+          <div class="green"> Concrete example</div>
           <ul>
-            <li class="fragment"><p>A paragraph is your content</p></li>
+            <div style="font-size: 80%">
+            <li class="fragment"><p>A paragraph is your <em>content</em>.</p></li>
             <li class="fragment">
-              <div style="font-size: 80%">Putting your content into an HTML tag to make it look like a paragraph is structure</div>
+              Putting your content into an HTML tag to make it look like a paragraph is <em>structure</em>.</div>
+              <br>
               <pre><code class="html">
-                &lt;p>A paragraph is your content&lt;/p>
+                &lt;p>A paragraph is your content.&lt;/p>
               </code></pre>
           </li>
           <li class="fragment">
-            <div style="font-size: 80%">Make the font of your paragraph blue and 18pt is presentation</div>
-            <p class="blue">A paragraph is your content</p>
+            <div style="font-size: 80%">Making the font of your paragraph blue and 18pt is <em>presentation</em>:</div>
+            <p class="blue" style="text-align: center">A paragraph is your content.</p>
           </li>
         </section>
 
@@ -203,7 +206,7 @@
           <ul>
             <li class="fragment">Our HTML lives are made up of tags.</li>
             <li class="fragment">All HTML <strong>tags</strong> have &lt; and &gt;</li>
-            <li class="fragment">There are a variety: p, strong, div, em, span, section, etc. <br><small>etc is not one</small></li>
+            <li class="fragment">There are a variety of tags: p, strong, div, em, span, section, etc. <br><small>"etc." is not one...</small></li>
             <li class="fragment">A paragraph in HTML is simply:
               <pre><code class="html">
 &lt;p>There's a tag on the left and a tag on the right.&lt;/p>
@@ -214,7 +217,7 @@
         
         <!-- HTML element-->
         <section>
-         <h3>Anatomy of an HTML element</h3>
+         <h3>Anatomy of an HTML Element</h3>
          <ul>
            <li class="fragment">
              Element
@@ -222,32 +225,36 @@
                <li>An individual component of HTML</li>
                <li>Paragraph, Table, List</li>
               <li style="list-style: none;">
-          <pre><code class="html">
-&lt;strong>This is an HTML element, right here<span style="color: #f05b62;">&lt;/strong></code>
-          </pre>
-          </li>
+<pre><code class="html">&lt;strong>This is an HTML element, right here<span style="color: #f05b62;">&lt;/strong></code>
+                </pre>
+              </li>
               </ul>
-          </li>
-          <li class="fragment">
+            </li>
+          </ul>  
+        </section>
+        <section>
+         <h3>Anatomy of an HTML Element, cont.</h3>
+           <ul>
+            <li class="fragment">
             Tag
             <ul>
               <li>Markers that signal the beginning and 
                end of an element</li>
                <li>Opening tag and Closing Tag
 <pre><code class="html">
- &lt;tagname>Stuff in the middle&lt;/tagname>
+&lt;tagname>Stuff in the middle&lt;/tagname>
 </code></pre>
               </li>
                <li>
 <pre><code class="html">
- &lt;p> This is a sample paragraph.&lt;/p>
+ &lt;p>This is a sample paragraph.&lt;/p>
 </code></pre>
               </li>
             </ul>
         </section>
         
         <section>
-         <h3>Anatomy of an HTML element</h3>
+         <h3>Anatomy of an HTML Element, cont.</h3>
          <ul>
            <li class="fragment">
              Container Element
@@ -273,7 +280,7 @@
         </section>
         
         <section>
-         <h3>Anatomy of an HTML element</h3>
+         <h3>Anatomy of an HTML Element, cont.</h3>
          <ul>
            <li class="fragment">
              Attribute
@@ -291,9 +298,8 @@
               attribute.</li>
               <li>
 <pre><code class="html">
- &lt;a href="http://johndavidback.com">A smart dude's 
- website&lt;/a>
- &lt;img src="my.picture.jpg"/> 
+ &lt;a href="http://catherinerust.com">Catherine's Website&lt;/a>
+ &lt;img src="cats.jpg"/> 
 </code></pre>
               </li>
             </ul>
@@ -302,7 +308,7 @@
         <section>
         <h3>Questions?</h3>
         <div>
-          <p>We covered:</p>
+          <p>We have covered:</p>
           <ul>
             <li>Tags</li>
             <li>Elements and their two kinds</li>
@@ -311,7 +317,7 @@
 
             </div>
             <p>&nbsp;</p>
-            <p>Do all of those things make some sort of sense?</p>
+            <p><span style="font-size: 400%;" class="blue">?</span></p>
             <p class="fragment">Okay, let's build a skeleton!</p>
         </section>
         
@@ -319,7 +325,7 @@
         <section>
         <h3>Doctype</h3>
         <p>The ﬁrst thing on an HTML page is the doctype, which tells the browser which version of the markup language the page is using.</p>
-        <p>Here's the doctype we use to tell the browser "Hey, this is HTML5, buddy"</p>
+        <p>Here's the doctype we use to tell the browser "Hey, this is HTML5, buddy."</p>
         <pre><code class="html">
           &lt;!DOCTYPE html>
         </code></pre>
@@ -344,14 +350,14 @@
         <section>
           <h3>Head and Body Tags</h3>
           <div class="left-align">
-            <p class="fragment">The head contains meta information about the page.</p>
-            <p class="fragment">The body contains the actual content of the page.</p>
+            <p class="fragment">The &lt;head&gt; contains meta (internal) information about the page.</p>
+            <p class="fragment">The &lt;body&gt; contains the actual content of the page.</p>
           </div>
         </section>
         
         <section>
           <h3>Head and Body Tags</h3>
-          <p>This is the basis of a complete HTML web page.</p>
+          <p>This is the basis of a complete HTML web page, called a <em>skeleton</em>.</p>
           <pre><code class="html">
             &lt;!DOCTYPE html>
             &lt;html>
@@ -373,7 +379,7 @@
           <h3>Nesting</h3>
           <p>All elements "nest" inside one another</p>
           <img src="images/owls.jpg"/>
-          <p>Whichever element OPENS first CLOSES last</p>
+          <p>Whichever element opens <em>first</em> closes <em>last</em>.</p>
         </section>
 
         <section>
@@ -421,7 +427,7 @@ soon!&lt;/p>
           
           </div>
           <div class="clear"></div>
-          <p>* White space is only for humans!</p>
+          <p>* White space is only for humans! *</p>
           </div>
         </section>
         
@@ -448,7 +454,7 @@ soon!&lt;/p>
             <h6 style="font-size: 75%">Heading 6</h6>
           </div>
           <div class="clear"></div>
-          <p>* Heading number indicates hierarchy, not size. Think: Outlines from high school papers</p>
+          <p>* Heading number indicates hierarchy, not size. * <br> Think: Writing outlines for papers in school.</p>
           </div>
         </section>
         
@@ -492,28 +498,29 @@ soon!&lt;/p>
         <section>
           <h3>Line Breaks</h3>
           <div>
-          <div class="left" style="width:50%">
+          <div class="left" style="width:55%">
 <pre><code>
 &lt;p>
-  Imagine there's no Heaven&lt;br/>
-  It's easy if you try&lt;br/>
-  No hell below us&lt;br/>
-  Above us only sky
+Or yet in wise old Ravenclaw, &lt;br/>
+If you've a ready mind, &lt;br/>
+Where those of wit and learning, &lt;br/>
+Will always find their kind
 &lt;/p>
 </code></pre>
           </div>
-          <div class="left left-align" style="width:50%">
+          <div class="left left-align" style="width:45%; font-size: 70%;" >
             <p>
-            Imagine there's no Heaven <br/>
-            It's easy if you try <br/>
-            No hell below us  <br/>
-            Above us only sky
+              <br />
+              Or yet in wise old Ravenclaw,<br />
+              If you've a ready mind,<br />
+              Where those of wit and learning,<br />
+              Will always find their kind
             </p>
           </div>
           <div class="clear"></div>
           <br/>
           <br/>
-          <p>* Notice: This tag is our first example of a stand-alone or "self-closing" element. A break can't contain anything.</p>
+          <p>* Notice: This tag is our first example of a stand-alone or "self-closing" element. A break can't contain anything. *</p>
           </div>
         </section>
         
@@ -522,13 +529,13 @@ soon!&lt;/p>
           <h3>Inline vs Block</h3>
           <div class="left-align">
             <div class="fragment">
-              <p>So far, we have mostly seen "block" elements</p>
-              <p>They appear on the next line, like paragraphs</p>
+              <p>So far, we have mostly seen <em class="green">block</em> elements</p>
+              <p>They begin on the next line, like paragraphs.</p>
             </div> 
             <br/><br/>
             <div class="fragment">
-              <p>There are also "inline" elements</p>
-              <p>They appear on the same line that they are written on.</p>
+              <p>There are also <em class="green">inline</em> elements</p>
+              <p>They appear on the same line that they were written on.</p>
             </div>
           </div>
         </section>
@@ -552,7 +559,7 @@ soon!&lt;/p>
           <div class="clear"></div>
           <br/>
           <br/>
-          <p>* Notice: em and strong are meant to indicate meaning through style. If you want to have italicized for appearance and not to communicate meaning, you should use CSS.</p>
+          <p>Notice: &lt;em&gt; and &lt;strong&gt; are meant to indicate meaning through style. If you want to have italicized or bold text for appearance - and not to communicate meaning - you should use CSS.</p>
           </div>
         </section> 
         
@@ -560,33 +567,33 @@ soon!&lt;/p>
         <section>
           <h3>Let's Develop It!</h3>
           <p class="blue">We are going to start building a personal site.</p>
-          <ul>
-            <li>Create a new file with your text editor.</li>
-            <li>Try to keep your file names lowercase, with no spaces in them</li>
-            <li>Save it with the extension .html, so perhaps class1.html, in a folder on your Desktop called GDI.</li>
-            <li>Start the page with Doctype, Head, and Body</li>
-            <li>Write a paragraph about yourself</li>
-            <li>Add a list of your favorite things</li>
+          <ol>
+            <li>Create a new file and name it <em class="yellow">class1.html</em><br> 
+            <span style="font-size: 80%"> Keep your file names lowercase and without spaces.<br>
+            The ".html" tells the computer what type of file you have saved.</span></li>
+            <li>Start the page with Doctype, Head, and Body - a Skeleton!</li>
+            <li>Write a paragraph about yourself.</li>
+            <li>Add a list of your favorite things.</li>
             <li>Feel free to experiment!</li>
-          </ul>
+          </ol>
         </section> 
 
         <section>
-          <h3>Skeleton Cheat Sheet</h3>
-          <pre><code class="html">
-          &lt;!DOCTYPE html>
-          &lt;html>
+          <h3>Skeleton Syntax Review</h3>
+<pre><code class="html">
+  &lt;!DOCTYPE html>
+  &lt;html>
 
-            &lt;head>
-              &lt;title>My great site by John&lt;/title>
-            &lt;/head>
+    &lt;head>
+       &lt;title>My Amazing Website!&lt;/title>
+    &lt;/head>
 
-            &lt;body>
-              &lt;p>What a great body&lt;/p>
-            &lt;/body>
+    &lt;body>
+      &lt;p>This is a paragraph about me! Now how do I add a list?&lt;/p>
+    &lt;/body>
 
-          &lt;/html>
-          </code></pre>
+  &lt;/html>
+</code></pre>
           <p>You can steal the above code <a href="/skeleton.html" target="_blank">right here</a>. Just right-click, 'view source', and then copy and paste.</p>
           </section>
         
@@ -595,14 +602,14 @@ soon!&lt;/p>
           <h3>Links</h3>
           <p>Links have three components</p>
           <ul>
-            <li>Tag: &lt;a>&lt;/a></li>
+            <li>Tag: &lt;a> &lt;/a></li>
             <li><strong>href</strong> attribute: "http://www.girldevelopit.com"</li>
             <li><strong>alt</strong> attribute: "Girl Develop It"</li>
           </ul>
 <pre><code>
-&lt;a href="http://www.girldevelopit.com" alt="Girl Develop It Homepage">GDI&lt;/a>
+&lt;a href="http://www.girldevelopit.com" alt="Girl Develop It Homepage">Girl Develop It!&lt;/a>
 </code></pre>
-        <p><a href="http://www.girldevelopit.com" alt="Girl Develop It Homepage">GDI</a></p>
+        <p><a href="http://www.girldevelopit.com" alt="Girl Develop It Homepage">Girl Develop It!</a></p>
 
         <p class="fragment">What does HREF mean? Could be <a href="http://tomayko.com/writings/wtf-is-an-href-anyway" target="_blank">one of a few things</a>.</p>
         </section>
@@ -612,28 +619,32 @@ soon!&lt;/p>
           <h3>Images</h3>
           <p>Images also have three components</p>
           <ul>
-            <li>Tag: &lt;img/></li>
-            <li><strong>src</strong> attribute: "http://girldevelopit.com/assets/pink-logo.png"</li>
-            <li><strong>alt</strong> attribute: "Girl Develop It logo"</li>
+            <li>Tag: <span class="yellow">&lt;img/> </span></li>
+            <li><strong class="yellow">src</strong> attribute: location of your image</li>
+            <li><strong class="yellow">alt</strong> attribute: description for screen readers</li>
             <li>Let's all try it! Copy this code into your HTML.</li>
           </ul>
 <pre><code>
-&lt;img src="http://girldevelopit.com/assets/pink-logo.png" alt="Girl Develop It Logo"/>
+&lt;img src="http://www.fillmurray.com/350/200" alt="Bill Murray"/>
 </code></pre>
-<img src="http://girldevelopit.com/assets/pink-logo.png" alt="Girl Develop It Logo"/>
+<img src="http://www.fillmurray.com/350/200" alt="Bill Murray"/>
         </section>
         
         <!-- Exercise-->
         <section>
           <h3>Let's Develop It</h3>
           <p>Add images and links to your funky webpage!</p>
-          <p>&nbsp;</p>
           <p>Feel free to get crazy...</p>
 <pre><code class="html">
   &lt;a href="http://girldevelopit.com/" alt="Girl Develop It">
-  &lt;img src="http://girldevelopit.com/assets/pink-logo.png" alt="Girl Develop It Logo"/>
+  &lt;img src="http://www.placekitten.com/400/400" alt="A Kitty!"/>
   &lt;/a>
 </code></pre>
+          <a href="http://www.placekitten.com/" alt="Place Kitten" target="_blank">placekitten.com/</a><br>
+          <a href="http://www.fillmurray.com/" alt="Fill Murray" target="_blank">fillmurray.com/</a><br>
+          <a href="http://placecorgi.com/" alt="Place Corgi" target="_blank">placecorgi.com/</a><br>
+          <a href="http://baconmockup.com/" alt="Bacon Mock Yp" target="_blank">baconmockup.com/</a><br>
+          <a href="http://placehold.it/" alt="Place Hold It" target="_blank">placehold.it/</a>
 
         </section>
         
