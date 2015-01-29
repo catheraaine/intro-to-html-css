@@ -46,6 +46,13 @@
         
         <!-- Welcome-->
         <section>
+          <h3> Welcome! </h3>
+          <p class="blue" style="font-size: 200%"> Wifi Info </p>
+            <p>Network: RFGUEST</p>
+            <p>Password: SilverJoe's</p>
+        </section>
+
+        <section>
           <h3>Welcome!</h3>
           <div class="left-align">
           <p>Girl Develop It is here to provide affordable and accessible programs to learn software through mentorship and hands-on instruction.</p>
@@ -190,14 +197,17 @@
             <li class="fragment">
               Putting your content into an HTML tag to make it look like a paragraph is <em>structure</em>.</div>
               <br>
+            </li>
+            <li class="fragment">
               <pre><code class="html">
                 &lt;p>A paragraph is your content.&lt;/p>
               </code></pre>
-          </li>
-          <li class="fragment">
-            <div style="font-size: 80%">Making the font of your paragraph blue and 18pt is <em>presentation</em>:</div>
-            <p class="blue" style="text-align: center">A paragraph is your content.</p>
-          </li>
+            </li>
+             <li class="fragment">
+              <div style="font-size: 80%">Making the font of your paragraph blue and 18pt is <em>presentation</em>:</div>
+              <p class="blue" style="text-align: center">A paragraph is your content.</p>
+            </li>
+          </ul>
         </section>
 
         <!-- Intro to HTML element -->
@@ -324,11 +334,13 @@
         <!-- HTML Page-->
         <section>
         <h3>Doctype</h3>
-        <p>The ﬁrst thing on an HTML page is the doctype, which tells the browser which version of the markup language the page is using.</p>
-        <p>Here's the doctype we use to tell the browser "Hey, this is HTML5, buddy."</p>
+        <p class="fragment">The ﬁrst thing on an HTML page is the "doctype", which tells the browser which version of the markup language the page is using.</p>
+        <p class="fragment">Here's the doctype we use to tell the browser "Hey, this is HTML5, buddy."</p>
+        <div class="fragment">
         <pre><code class="html">
           &lt;!DOCTYPE html>
         </code></pre>
+      </div>
         </section>
         
         <section>
@@ -350,8 +362,8 @@
         <section>
           <h3>Head and Body Tags</h3>
           <div class="left-align">
-            <p class="fragment">The &lt;head&gt; contains meta (internal) information about the page.</p>
-            <p class="fragment">The &lt;body&gt; contains the actual content of the page.</p>
+            <p class="fragment">The <span class="green">&lt;head&gt;</span> contains meta (internal) information about the page.</p>
+            <p class="fragment">The <span class="green">&lt;body&gt;</span> contains the actual content of the page.</p>
           </div>
         </section>
         
@@ -378,8 +390,8 @@
         <section>
           <h3>Nesting</h3>
           <p>All elements "nest" inside one another</p>
-          <img src="images/owls.jpg"/>
-          <p>Whichever element opens <em>first</em> closes <em>last</em>.</p>
+          <img class="fragment" src="images/owls.jpg"/>
+          <p class="fragment">Whichever element opens <em>first</em> closes <em>last</em>.</p>
         </section>
 
         <section>
@@ -466,13 +478,13 @@ soon!&lt;/p>
 <pre><code>
   &lt;ul>
     &lt;li>List Item&lt;/li>
-    &lt;li>AnotherList Item&lt;/li>
+    &lt;li>Another List Item&lt;/li>
   &lt;/ul>
 </code></pre>
 <pre><code>
   &lt;ol>
     &lt;li>List Item&lt;/li>
-    &lt;li>AnotherList Item&lt;/li>
+    &lt;li>Another List Item&lt;/li>
   &lt;/ol>
 </code></pre>
           </div>
@@ -480,14 +492,14 @@ soon!&lt;/p>
             <p>Unordered list (bullets)
             <ul>
               <li>List Item</li>
-              <li>AnotherList Item</li>
+              <li>Another List Item</li>
             </ul>
             <br/>
             <br/>
             <p>Ordered list (sequence)
             <ol>
               <li>List Item</li>
-              <li>AnotherList Item</li>
+              <li>Another List Item</li>
             </ol>
           </div>
           <div class="clear"></div>
@@ -559,22 +571,22 @@ Will always find their kind
           <div class="clear"></div>
           <br/>
           <br/>
-          <p>Notice: &lt;em&gt; and &lt;strong&gt; are meant to indicate meaning through style. If you want to have italicized or bold text for appearance - and not to communicate meaning - you should use CSS.</p>
+          <p>Notice: <span class="green">&lt;em&gt;</span> and <span class="green">&lt;strong&gt;</span> are meant to indicate meaning through style. If you want to have italicized or bold text for appearance - and not to communicate meaning - you should use CSS.</p>
           </div>
         </section> 
         
         <!-- Exercise-->
         <section>
           <h3>Let's Develop It!</h3>
-          <p class="blue">We are going to start building a personal site.</p>
+          <p class="blue" class="fragment">We are going to start building a personal site.</p>
           <ol>
-            <li>Create a new file and name it <em class="yellow">class1.html</em><br> 
+            <li class="fragment">Create a new file and name it <em class="yellow">class1.html</em><br> 
             <span style="font-size: 80%"> Keep your file names lowercase and without spaces.<br>
             The ".html" tells the computer what type of file you have saved.</span></li>
-            <li>Start the page with Doctype, Head, and Body - a Skeleton!</li>
-            <li>Write a paragraph about yourself.</li>
-            <li>Add a list of your favorite things.</li>
-            <li>Feel free to experiment!</li>
+            <li class="fragment">Start the page with Doctype, Head, and Body - a Skeleton!</li>
+            <li class="fragment">Write a paragraph about yourself.</li>
+            <li class="fragment">Add a list of your favorite things.</li>
+            <li class="fragment">Feel free to experiment!</li>
           </ol>
         </section> 
 
@@ -602,9 +614,9 @@ Will always find their kind
           <h3>Links</h3>
           <p>Links have three components</p>
           <ul>
-            <li>Tag: &lt;a> &lt;/a></li>
-            <li><strong>href</strong> attribute: "http://www.girldevelopit.com"</li>
-            <li><strong>alt</strong> attribute: "Girl Develop It"</li>
+            <li>Tag: <span class="yellow">&lt;a> &lt;/a></span></li>
+            <li><strong class="yellow">href</strong> attribute: "http://www.girldevelopit.com"</li>
+            <li><strong class="yellow">alt</strong> attribute: "Girl Develop It"</li>
           </ul>
 <pre><code>
 &lt;a href="http://www.girldevelopit.com" alt="Girl Develop It Homepage">Girl Develop It!&lt;/a>
@@ -648,7 +660,8 @@ Will always find their kind
 
         </section>
         
-        <section>
+       <!-- Tables -->
+  <!-- <section>
           <h3>Tables</h3>
           <div>
           <div class="left" style="width:50%">
@@ -680,27 +693,28 @@ Will always find their kind
           </div>
           <div class="clear"></div>
           </div>
-        </section>
-        
+        </section> -->
+
         <!-- Character codes-->
         <section>
           <h3>Character codes</h3>
           There are character codes for many different characters in many different languages
           <ul>
-            <li>Delta: &amp;delta; &delta;</li>
-            <li>Copyright symbol: &amp;copy; &copy;</li>
-            <li>Grave: &amp;grave; &grave;</li>
-            <li>An grave a: &amp;agrave; &agrave;</li>
+            <li>Delta: <span style="color:#CC66FF;">&amp;delta;</span> &delta;</li>
+            <li>Copyright symbol: <span style="color:#CC66FF;">&amp;copy;</span> &copy;</li>
+            <li>Grave: <span style="color:#CC66FF;">&amp;grave;</span> &grave;</li>
+            <li>An grave a: <span style="color:#CC66FF;">&amp;agrave;</span> &agrave;</li>
+            <li>Angle Brackets: <span style="color:#CC66FF;">&amp;lt; &amp;gt;</span> &lt; &gt;</li>
           </ul>
           <div>
           <a href="http://rabbit.eng.miami.edu/info/htmlchars.html">Full list</a>
           </div>
         </section>
         
-        <!-- -->
+        <!-- Questions?! -->
         <section>
           <h2>Questions?</h2>
-          <div style = "font-size:1200%; height:100%; margin-top:40%" class ="blue">?
+          <div style = "font-size:1200%; height:100%; margin-top:25%" class ="blue">?
             <div class ="clear"></div></div>
         </section>
 			</div>

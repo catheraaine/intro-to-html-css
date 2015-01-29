@@ -1,0 +1,63 @@
+/*
+
+Pink - #f05b62
+Green - #92BB44
+Yellow - #EDAB23
+Blue - #01A9B4 
+Black - #000000
+White - #FFFFFF
+Grey - #424242
+Purple - #CC66FF
+
+ */
+
+
+body{
+	background-color: white;
+	color: black;
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 110%;
+}
+
+.container{
+	width: 60%;
+	background-color: #424242;
+	color: white;
+	padding: 6%;
+	height: 100%;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+h1{
+	color: #f05b62;
+}
+
+h2 {
+	color: #f05b62;
+}
+
+a:link{
+	text-decoration: none;
+	color: #01A9B4;
+
+}
+a:visited{
+	color: #01A9B4;
+}
+a:hover{
+	color: #EDAB23;
+	font-style: italic;
+
+}
+a:active{
+
+}
+
+li {
+	padding-top: 2px;
+	padding-bottom: 3px;
+}
+
