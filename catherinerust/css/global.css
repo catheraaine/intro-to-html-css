@@ -106,9 +106,27 @@ nav li a:hover {
    padding: 5px;
 }
 
-ul li{
-    padding: 5px;
+p a:link{
+    text-decoration: none;
+    color: #b06ab9;
+    border-bottom: 1px solid #b06ab9;
 }
+p a:visited{
+    color: #b2abcb;
+    border-bottom: 1px solid #b2abcb;
+}
+p a:hover{
+    cursor: pointer;
+    border-bottom: none;
+    background-color: #5b3c83;
+    color: #FFF;
+
+}
+p a:active{
+    background-color: #b06ab9;
+
+} 
+
 
 .column {
     float: left;
@@ -127,6 +145,7 @@ ul li{
     font-size: 150%;
     margin-bottom: 15px;
 }
+
 .column .btn {
    border: 2px solid #b2abcb;
     padding: 10px 20px;
@@ -135,6 +154,11 @@ ul li{
     font-size: 150%;
     text-decoration: none;
     color: #b2abcb;
+}
+
+.column .btn:hover{
+    background-color: #425f74; /* #5b3c83 */
+    color: white;
 }
 
 #social {
@@ -161,24 +185,10 @@ ul li{
     padding: 5px;
 }
 
-#main-content a:link{
-    text-decoration: none;
-    color: #b06ab9;
-    border-bottom: 1px solid #b06ab9;
-}
-#main-content a:visited{
-    color: #b2abcb;
-    border-bottom: 1px solid #b2abcb;
-}
-#main-content a:hover{
-    cursor: pointer;
-    border-bottom: none;
-    background-color: #5b3c83;
-    color: #FFF;
 
-}
-#main-content a:active{
 
-}
+
+
+
 
 
