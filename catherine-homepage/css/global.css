@@ -161,23 +161,23 @@ ul li{
     padding: 5px;
 }
 
-section a:link{
+#main-content a:link{
     text-decoration: none;
     color: #b06ab9;
     border-bottom: 1px solid #b06ab9;
 }
-section a:visited{
+#main-content a:visited{
     color: #b2abcb;
     border-bottom: 1px solid #b2abcb;
 }
-section a:hover{
+#main-content a:hover{
     cursor: pointer;
     border-bottom: none;
     background-color: #5b3c83;
     color: #FFF;
 
 }
-section a:active{
+#main-content a:active{
 
 }
 
