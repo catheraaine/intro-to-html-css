@@ -44,17 +44,14 @@
         
         <!-- Welcome-->
         <section>
-          <h3>Welcome!</h3>
-          <div class="left-align">
-          <p>Girl Develop It is here to provide affordable and accessible programs to learn software through mentorship and hands-on instruction.</p>
-          <p class="green">Some "rules"</p>
-          <ul>
-            <li>We are here for you!</li>
-            <li>Every question is important</li>
-            <li>Help each other</li>
-            <li>Have fun</li>
-          </ul>
-          </div>
+          <h3> Welcome! </h3>
+          <p class="green" style="font-size: 200%"> Wifi Info </p>
+          <p>Network: RFGUEST</p>
+          <p>Password: SilverJoe's</p>
+
+          <p class="green" style="font-size: 200%"> Slide Deck </p>
+          <p><a href="http://catherinerust.com/intro/class2.html#/" target="_blank" alt="Class 2 Slides">Class 2 Slides </a></p>
+          <p>catherinerust.com/intro/class2.html</p>
         </section>
         
         <!-- Role of HTML v. CSS-->
@@ -76,29 +73,31 @@
           <li>&lt;a></li>
           <li>&lt;america></li>
           </ol>
-          <div class="fragment">Answer: &lt;a></div>
+          <div class="fragment yellow">Answer: &lt;a></div>
         </section>
 
         <section>
           <h3>Quiz, pt. 2!</h3>
           <p>What are the two tags that nest directly within the &lt;html> tags?</p>
-          <div class="fragment">Answer: &lt;head> and &lt;body></div>
+          <div class="fragment yellow">Answer: &lt;head> and &lt;body></div>
         </section>
 
         <section>
           <h3>Quiz, pt. 3!</h3>
           <p>What is it called when you have a 'tag' + 'content' + 'closing tag'?</p>
-          <div class="fragment">Answer: An HTML <strong>Element</strong></div>
+          <div class="fragment yellow">Answer: An HTML <strong>Element</strong></div>
         </section>
 
         <!--Refresh!-->
         <section>
             <h3>Tags and elements</h3>
-            <p>Tags are these puppies:</p>
+            <p><span class="green">Tags</span> are the end pieces:</p>
 <pre><code class="html">
-  &lt;p>&lt;/p>, &lt;img />, &lt;h1>&lt;/h1>
+  &lt;p>&lt;/p>
+  &lt;img />
+  &lt;h1>&lt;/h1>
 </code></pre>
-            <p>And elements is the whole kit and kaboodle:</p>
+            <p>And <span class="green">Elements</span> are the whole thing:</p>
 <pre><code class="html">
   &lt;h1>Fun Hamlet Quotes&lt;/h1>
   &lt;p>"And it must follow, as the night the day."&lt;/p>
@@ -148,7 +147,7 @@ selector {
 
         <section>
           <h3>CSS: The second part - Declaration</h3>
-          <p>It's how we give a certain style to what we 'selected'</p>
+          <p>It's how we give a certain style to what we 'selected'.</p>
 <pre><code class="css">
 p {
   color: red;
@@ -160,17 +159,17 @@ p {
 
         <section>
           <h3>Who wants to see a live example?</h3>
-          <p>If you guys say 'yes,' we can do one right now!</p>
+          <p>If you say 'yes,' we can do one right now!</p>
           <p>&nbsp;</p>
-          <p>Note: Create two files for today, class2.html, and class2.css.</p>
-
+          <p class="fragment">Note: Create two files for today, <span class="yellow">class2.html</span>, and <span class="yellow">class2.css</span>.</p>
+<div class="fragment">
 <pre><code class="html">
 &lt;head>
   ...
   &lt;link href="class2.css" rel="stylesheet">
 &lt;/head>
 </code></pre>
-
+</div>
         </section>
         
         <!-- The CSS Rule-->
@@ -182,10 +181,10 @@ selector {
 }
 </code></pre>
           <div class="left-align">
-            <p>A block of CSS code is a rule.</p>
-            <p>The rule starts with a selector.</p>
-            <p>It has sets of properties and values.</p>
-            <p>A property-value pair is a declaration.</p>
+            <p class="fragment">A block of CSS code is a <span class="blue">rule</span>.</p>
+            <p class="fragment">The rule starts with a <span class="blue">selector</span>.</p>
+            <p class="fragment">It has sets of <span class="blue">properties</span> and <span class="blue">values</span>.</p>
+            <p class="fragment">A property-value pair is a <span class="blue">declaration</span>.</p>
           </div>
         </section>
         
@@ -193,11 +192,11 @@ selector {
         <section>
           <h3>CSS Syntax</h3>
           <div class="left-align">
-            <p>Declarations:  Property and value of style you plan use on HTML element. </p>
-          <p>Declarations end with a semicolon</p>
-          <p>Declaration groups are surrounded by curly brackets.</p>
+            <p class="fragment">Declarations:  Property and value of style you plan use on HTML element. </p>
+            <p class="fragment">Declarations end with a semicolon (;).</p>
+            <p class="fragment">Declaration groups are surrounded by curly brackets.</p>
           </div>
-          
+<div class="fragment">
 <pre><code class="html">
 selector {
   property: value;
@@ -205,7 +204,8 @@ selector {
   property: value;
 }
 </code></pre>
-<p class="fragment">This is a 'rule' with three declarations.</p>
+</div>
+        <p class="fragment">This is a 'rule' with three declarations.</p>
         </section>
 
         <!-- Selectors elements-->
@@ -227,13 +227,14 @@ img {
 
 
         <section>
-          <h3>Rewind to HTML: id's</h3>
+          <h3>Rewind to HTML</h3>
           <p class="left-align">How can we identify a single item on the page?</p>
           <p class="fragment left-align">By giving it an 'id'.</p>
 <pre class="fragment"><code class="html">
-  &lt;p id="footer">This is the footer of our website, and we should probably style it in some way so it hangs out at the bottom.&lt;/p>
+  &lt;p id="footer">This is the footer of our website, and we should 
+  probably style it in some way so it hangs out at the bottom.&lt;/p>
 </code></pre>
-          <p class="fragment left-align">The 'id' of that paragraph is 'footer'</p>
+          <p class="fragment left-align">The 'id' of that paragraph is 'footer'.</p>
           <p class="fragment left-align">There can be only one.</p>
           <p class="fragment left-align">We've basically 'named' this element so we can style it in our CSS document specifically.</p>
 
@@ -258,7 +259,7 @@ img {
 
         <!-- Rewind! -->
         <section>
-          <h3>Rewind to HTML, classes</h3>
+          <h3>Rewind to HTML</h3>
           <p class="left-align">How can we identify a set of items on the page?</p>
           <p class="fragment left-align">By giving each of them a 'class'.</p>
 <pre class="fragment"><code class="html">
@@ -292,14 +293,28 @@ img {
         <section>
         <h3>IDs vs. Classes</h3>
         <div class="left-align">
-          <span class="yellow">id</span>: Should only apply to one element on a webpage. A webpage only has one footer.
+          <span class="yellow">ID</span>: Should only apply to one element on a webpage. A webpage only has one footer.
           <p>The "#" is how you tell CSS "this is an id."  <span class="green">#footer</span></p>
         </div>
+        <br>
         <div class="left-align">
-          <span class="yellow">class</span>: Lots of elements can have the same class. There can be many warnings on one page.
+          <span class="yellow">Class</span>: Lots of elements can have the same class. There can be many warnings on one page.
           <p>The "." is how you tell CSS "this is a class name." <span class="green">.warning</span></p>
         </div>
       </section>  
+
+       <section>
+        <h3>IDs vs. Classes</h3>
+        <br>
+        <div class="left-align">
+          <span class="yellow">ID</span>: Unique, like your Social Security <em class="green">Number (#)</em>. 
+        </div>
+        <br>
+        <br>
+        <div class="left-align">
+          <span class="yellow">Class</span>: A school day can have many <em class="green">Periods (.)</em>. 
+        </div>
+      </section> 
       
         <!-- Selector position-->
         <section>
@@ -309,11 +324,13 @@ p em {
   color: yellow;
 }
 </code></pre>
-       <p>Selects all &lt;em&gt; elements that are within a paragraph</p>
+
+       <p>Selects all &lt;em&gt; elements that are within a &lt;p&gt;.</p>
+       <p>Such as this HTML:</p>
 <pre><code class="html">
 &lt;p>This is &lt;em>important.&lt;/em>&lt;/p>
 </code></pre>
-        <p>The associated HTML.</p>
+        
       </section>
         
         <!-- Multiple values -->
@@ -424,9 +441,9 @@ p {
 <pre><code class="html">
   &lt;p style="color:red;">Some text.&lt;/p>
 </code></pre>
-          <p>Uses the HTML attribute style.</p>
-          <p>Difficult to use in large projects</p>
-          <p>Not preferred.</p>
+          <p>Uses the HTML attribute "style".</p>
+          <p>Difficult to use in large projects.</p>
+          <p>Sloppy.</p>
         </section>
         
         <!-- Embedded -->
@@ -446,7 +463,7 @@ p {
 </code></pre>
           <p>Inside &lt;head> element.</p>
           <p>Uses &lt;style> tag.</p>
-          <p>Can only be used in one html file</p>
+          <p>Can only be used by one html file. Bulky.</p>
         </section>
         
         <!-- External-->
@@ -458,7 +475,7 @@ p {
 &lt;/head>
 </code></pre>
           <p>Shared resource for several pages.</p>
-          <p>Reduced ﬁle size &amp; bandwidth</p>
+          <p>Reduces ﬁle size &amp; bandwidth.</p>
           <p>Easy to maintain in larger projects.</p>
           <p>Preferred by nerds everywhere!</p>
         </section>
@@ -467,17 +484,17 @@ p {
         <section>
           <h3>Let's develop it</h3>
           <ul>
-            <li>Create a new .css file</li>
-            <li>Add a link to the file in the head of the portfolio made last time</li>
-            <li>Add styles to change the colors, background colors or fonts of different parts of </li>
-            <li>Try using ids and classes to change specific elements</li>
+            <li class="fragment">You should have a <span class="yellow">class2.css</span> file.</li>
+            <li class="fragment">Make sure it is linked in the "head" of <span class="yellow">class1.html</span>.</li>
+            <li class="fragment">Add styles to change the colors, background colors or fonts of different parts of your page.</li>
+            <li class="fragment">Try using ids and classes to change specific elements.</li>
           </ul>
         </section>
         
         <!-- Cascading-->
         <section>
           <h3>Cascading</h3>
-          <p>Styles "cascade" down until changed</p>
+          <p>Styles "cascade" down until changed.</p>
           <p class="left-align small">class2.css</p>
 <pre><code class="html">
 p {
@@ -512,7 +529,7 @@ p {
             <li>width</li>
             <li>height</li>
           </ul>
-          <p><a href="https://developer.mozilla.org/en-US/docs/CSS/CSS_Reference">Comprehensive list of all CSS properties</a></p>
+          <p><a href="https://developer.mozilla.org/en-US/docs/CSS/CSS_Reference">Click here for a list of all CSS properties!</a></p>
         </section>
         
        <!-- Question-->
