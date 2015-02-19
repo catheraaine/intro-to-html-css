@@ -53,25 +53,29 @@
           <p><a href="http://catherinerust.com/intro/class2.html#/" target="_blank" alt="Class 2 Slides">Class 2 Slides </a></p>
         </section>
 
-        <section>
-          <h3>Refresher Quiz</h3>
-          <div class="left-align">
-          <p>1. Write out the HTML for a paragraph</p>
-          <p>2. What was our mnemonic device for the Box Model?</p>
-          <p>3. Who starred in the movie <a href="http://www.imdb.com/title/tt0113481/" target="_blank">Johnny Mnemonic?</a></p>
-          <p>4. What is the CSS used to center an object?</p>
-          <p>5. What is the CSS to create a border?</p>
-        </div>
-        </section>  
 
+        <!-- Quiz -->
         <section>
-          <h3>Refresher Quiz: Answers</h3>
+          <h3>Refresher Quiz!!!</h3>
           <div class="left-align">
-<pre class="fragment"><code class="html">
+          <ul>
+            <li class="fragment">What is the HTML for a paragraph?</li>
+<div class="fragment">
+<pre><code class="html">
 &lt;p>This is it.&lt;/p>
 </code></pre>
-            <p class="fragment">2. Trouble -> TRBL -> Top Right Bottom Left</p>
-            <p class="fragment">3. Keanu Reeves</p>
+</div>
+            <li class="fragment">What was our mnemonic device for the Box Model?</li>
+            <p> <span class="fragment">"Trouble"</span> <span class="fragment"> -> "TRBL" </span><span class="fragment"> -> "Top Right Bottom Left"</span></p>
+          </ul>
+
+          </div>
+        </section>  
+         <section>
+          <h3>Refresher Quiz, Cont.!!!</h3>
+          <div class="left-align">
+          <ul>
+            <li class="fragment">What is the CSS used to center an object?</li>
 <pre class="fragment"><code class="html">
 .centered { 
   width: 200px; 
@@ -79,72 +83,84 @@
   margin-right: auto; 
 }
 </code></pre>
+            <li class="fragment">What is the CSS to create a border?</li>
 <pre class="fragment"><code class="css">
 .bordered { border: 1px solid black; }
 </code></pre>
 <p class="fragment">Note: The classes can be anything we want.</p>
-          </div>
 
+          </ul>
+
+          </div>
         </section>      
 
+        <!-- Positioning -->
+
         <section>
-          <h3>Today is about Positioning</h3>
+          <h3> Positioning </h3>
           <div class="left-align">
-            <p>Organize your webpage.</p>
-            <p>Placement of things like:</p>
-            <ul>
+            <p class="fragment">Today is about how to organize your web page with "Positioning".</p>
+            <p class="fragment">Position controls placement of things like:</p>
+            <ul class="fragment">
               <li>Header</li>
               <li>Footer</li>
               <li>Navigation</li>
-              <li>Other crap</li>
+              <li>Other stuff</li>
             </ul>
           </div>
 
         </section>
         
+        <!-- Static Positioning -->
+
         <section>
          <h3>Static Positioning</h3>
          <div class="left-align">
-         <p>HTML elements are positioned static BY DEFAULT.</p>
-         <p>Static elements are positioned in the normal ﬂow of the page.</p>
-         <p>Static elements ignore top, bottom, right or left property specifications. (So there's no trouble, get it?)</p>
+         <p class="fragment">HTML elements are positioned <span class="green">static</span> by default.</p>
+         <p class="fragment">Static elements are positioned in the normal ﬂow of the page.</p>
+         <p class="fragment">Static elements ignore top, bottom, right or left property specifications. (So there's no trouble, get it?)</p>
          </div>
        </section>
        
        <section>
          <h3>Static Positioning</h3>
          <p>In normal flow, inline boxes flow from left to right, wrapping to next line when needed.</p>
+<div class="fragment">     
 <pre><code class="html">
-&lt;img src="images/cookie1.png"/>
-&lt;img src="images/cookie2.png"/>
-&lt;img src="images/cookie3.png"/>
+&lt;img src="images/maru1.png"/>
+&lt;img src="images/maru2.png"/>
+&lt;img src="images/maru3.png"/>
 ...
-&lt;img src="images/cookie2.png"/>
-&lt;img src="images/cookie3.png"/>
-
 </code></pre>
-<img src="images/cookie1.png"/>
-<img src="images/cookie2.png"/>
-<img src="images/cookie3.png"/>
-<img src="images/cookie1.png"/>
-<img src="images/cookie2.png"/>
-<img src="images/cookie3.png"/>
-<img src="images/cookie2.png"/>
-<img src="images/cookie3.png"/>
+</div>
+        <div class="fragment">  
+          <img src="images/maru1.png"/>
+          <img src="images/maru2.png"/>
+          <img src="images/maru3.png"/>
+          <img src="images/maru1.png"/>
+          <img src="images/maru2.png"/>
+          <img src="images/maru3.png"/>
+          <img src="images/maru2.png"/>
+          <img src="images/maru3.png"/>
+        </div>
        </section>
        
        <section>
          <h3>Static Positioning</h3>
-         <p>In normal flow, block boxes flow from top to bottom, making a new line after every box.</p>
+         <p>In normal flow, block elements flow from top to bottom, making a new line after each element.</p>
+<div class="fragment">  
 <pre><code class="html">
  &lt;p>Greetings&lt;/p>
  &lt;p>Hello&lt;/p>
  &lt;p>Hi there!&lt;/p>
 </code></pre>
+</div>  
+        <div class="fragment">
         <div class="left-align">
           <p>Greetings</p>
           <p>Hello</p>
           <p>Hi there!</p>
+        </div>
         </div>
       </section>
        
@@ -153,10 +169,10 @@
          <h3>Relative Positioning</h3>
          <div class="left-align">
          <ul>
-         <li class="fragment">Takes the element out of the normal flow, allowing it to be moved to the top, left, right or bottom. </li>
+         <li class="fragment"><span class="green">Relative</span> positioning takes the element out of the normal flow, allowing it to be moved to the top, left, right or bottom. </li>
          <li class="fragment">Does not affect the elements surrounding it.</li>
          <li class="fragment">Makes an element a "positioning context" in which to position other elements relative to it.</li>
-         <li class="fragment">Relative positioning and absolute positioning are used together.</li>
+         <li class="fragment">Relative positioning and <em>absolute</em> positioning are used together.</li>
          </ul>
          </div>
        </section>
@@ -164,7 +180,7 @@
        <section>
          <h3>Relative Positioning</h3>
          <p>The "relative" value will still put the element in the normal flow, but then offset it according to top/left/right/bottom properties.</p>
-
+<div class="fragment">
 <pre><code class="html">
   .relative{
     position: relative; 
@@ -174,43 +190,47 @@
     background-color: yellow;
   }
 </code></pre>
- <div style="border:2px solid black;">
- <div style="position: relative; left: 80px; top: 20px;
-   height: 100px; background-color: yellow; color:black; text-align:left">
-   Hello, hi!
- </div>
- </div>
-
+</div>
+        <div class="fragment">
+         <div style="border:2px solid black;">
+          <div style="position: relative; left: 80px; top: 20px;
+           height: 100px; background-color: yellow; color:black; text-align:left">
+           Hello, hi!
+          </div>
+        </div>
+        </div>
        </section>
 
        <section>
         <h3>Let's get it relatively straight.</h3>
-        <p>Get it?</p>
-        <div class="fragment left-align">
-          <p>It's in the normal flow.</p>
-          <p>But! We can move it with TRBL: top, right, bottom, left</p>
+        <p style="font-size:50%;">ha ha ... ha?</p>
+        <div class="left-align">
+          <p class="fragment">A relatively positioned element is in the normal flow.<span class="fragment"> But, we can move it with TRBL: top, right, bottom, left.</span></p>
         </div>
         <div class="fragment left-align">
-          <p>First exercise:</p>
-          <p>Make 'Develop It' shift out of place. Or any other words you want.</p>
+          <p>Exercise:</p>
         </div>
 <pre class="fragment"><code class="html">
-  &lt;h1>I love Girl Develop It! And John.&lt;/h1>
+  &lt;h1>I love Girl Develop It!&lt;/h1>
 </code></pre>
-        <p class="fragment">You don't have to love me.</p>
+        <div class="fragment left-align">
+        <p>Make 'Develop It' shift out of place. Or any other words you want.</p>
+        </div>
 
        </section>
+
        <!-- Absolute positioning-->
+       
        <section >
          <h3>Absolute Positioning</h3>
          <div class="left-align">
          <ul>
-         <li class="fragment">Positions element outside of the normal flow.</li>
-         <li class="fragment">An absolutely positioned element is offset from its container block, (if container is position: relative;).</li>
-         <li class="fragment">Its container block is the first element that has a position other than static.</li>
+         <li class="fragment"><span class="green">Absolute</span> Positioning moves elements outside of the normal flow.</li>
+         <li class="fragment">An absolutely positioned element is offset from its container block (if container is position: relative;).</li>
+         <li class="fragment">The container block is the first element that has a position other than static.</li>
          <li class="fragment">If no such element is found, the container block is &lt;html>.</li>
-         <li class="fragment">Other elements act as if it's not there.</li>
-         <li class="fragment">Determined by its oﬀset values in the properties top, bottom, right and left (<em>only if values supplied</em>).</li>
+         <li class="fragment">Other elements act as if the absolutely positioned element is just not there.</li>
+         <li class="fragment">Position is determined by TRBL.</li>
          </ul>
          </div>
        </section>
@@ -248,22 +268,32 @@
        <section>
         <h3>Example: Absolute Positioning</h3>
         <div class="left left-align" style="width: 45%;">
-        <p>Here's an example of an image with a caption absolutely positioned over top of it.</p>
+        <p>Here's an example of an image with a caption <em>absolutely positioned</em> over it.</p>
         <br/>
-        <p>The containing div has a position of relative, and the caption has a position of absolute.</p>
+        <p>The containing &lt;div&gt; has a position of <em>relative</em>, and the caption has a position of <em>absolute</em>.</p>
         </div>
         <div class="right" style="width: 45%;">
           <img src="images/example-absolute.png" style="border: none; box-shadow: none;"/>
         </div>
        </section>
+
+       <!-- Z-Index -->
+
        <section>
        <h3>Z-index</h3>
-         <p class="left-align">When you use positioning to move elements out of the normal flow of content, elements can overlap. You can change the order of overlapping with z-index.</p>
-         <p class="left-align">The element with highest z-index goes on top.</p>
+        <div class="left-align">
+         <p class="fragment">When you use positioning to move elements out of the normal flow of content, elements can overlap. </p>
+         <p class="fragment"> You can change the order of overlapping with <br> <span class="yellow"> z-index </span>.</p>
+         <p class="fragment">The element with highest z-index goes on top.</p>
+       </div>
+       </section>
+
+       <section>
+        <h3>Example: Z-index</h3>
 <pre><code class="html">
   .bottom{
     position: absolute; 
-    bottom: 10px; 
+    bottom: 40px; 
     left:60px; 
     background-color: yellow;
   }
@@ -271,47 +301,54 @@
 <pre><code class="html">
   .top{
     position: absolute; 
-    bottom: 15px; 
+    bottom: 35px; 
     left:60px; 
     background-color: green; 
     z-index: 2;
   }
 </code></pre>
-        <div style="position: absolute; bottom: -20px; left:60px; 
+        <div style="position: absolute; bottom: 40px; left:60px; 
           background-color: yellow; color:black"> Bottom </div>
-        <div style="position: absolute; bottom: -15px; left:60px; 
+        <div style="position: absolute; bottom: 35px; left:60px; 
           background-color: green; z-index: 2; "> Top </div>
        </section>
+       
+       <!-- Exercise -->
+
        <section>
         <h3>Let's Develop it!</h3>
         <p>Let's add some positioning.</p>
-        <p>Let's create a div that contains an image and a caption, and position the caption absolutely overtop the image.</p>
-        <div class="fragment"
-          <p class="left-align">The recipe:</p>
+        <p>Create a div that contains an image and a caption, and position the caption <em>absolutely</em> over top of the image.</p>
+        <div class="fragment">
           <ol type="1">
-            <li>Container &lt;div> with position: relative;</li>
-            <li>Image within the container</li>
-            <li>Caption &lt;div> with position: absolute; within the container</li>
+            <p class="left-align">The Recipe:</p>
+            <li class="fragment">Container &lt;div> with "position: relative;".</li>
+            <li class="fragment">Image within the container.</li>
+            <li class="fragment">Caption &lt;div> with "position: absolute;" within the container.</li>
           </ol>
         </div>
         
        </section>
+
        <!-- Float-->
+       
        <section>
          <h3>Float</h3>
          <div class="left-align">
             <ul>
-            <li>"Floating" an element takes it in the normal flow, as far to the left or right of it's containing element as possible.</li>
-            <li>Any other elements, such as paragraphs or lists, will wrap around the floated element.</li>
-            <li>Always specify a width when floating an element, otherwise the element is likely to take up the whole page and not appear floated.</li>
-            <li>You can specify a) whether an element is floated or not, and b) which side it ﬂoats on.</li>
+            <li class="fragment"> <span class="green">Floating</span> an element takes it in the normal flow, as far to the left or right of it's containing element as possible.</li>
+            <li class="fragment">Any other elements, such as paragraphs or lists, will wrap around the floated element.</li>
+            <li class="fragment">Always specify a width when floating an element, otherwise the element is likely to take up the whole page and not appear floated.</li>
+            <li class="fragment">You can specify a) whether an element is floated or not, and b) on which side it floats.</li>
             </ul>
          </div>
        </section>
-       <!--example float-->
+
+       <!--Example: Float-->
+       
        <section>
        <h3>Float: Example</h3>
-       <p>Below a &lt;blockquote> is floated to the left, allowing text to wrap around it on the right</p>
+       <p>Below a &lt;blockquote> is floated to the left, allowing text to wrap around it from the right.</p>
        <img src="images/example-floatbq.png" alt="example float" />
        </section>
        <section>
@@ -321,34 +358,39 @@
     float:left;
     width:200px;
     background:yellow;
+    padding: 10px;
+    margin: 10px;
   }
 </code></pre>
-        <div style="float:left; text-align: left;width:200px;background:yellow; color:black; padding: 10px;">
+        <div style="float:left; text-align: left;width:200px;background:yellow; color:black; padding: 10px; margin: 10px;">
           <small>Hi, I'm a yellow box with black text.<br/>
-          I like to hang out on the left side.</small><br/>
+          I like to hang out on the left.</small><br/>
         </div>
         <div class="left-align">Not floating element</div>
         <div class="left-align">Not floating element</div>
-         <div class="left-align">Not floating element with wrapping Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </div>
+         <div class="left-align">Not floating element with wrapping random text. Floats are pretty cool, huh? I like them. Notice there is also some margin around the float. </div>
        </section>
        
        <section>
-       <h3>Using floats to place elements side by side</h3> 
-       <p>If you want two block level elements to be side by side, you need to float both elements. One left, and one right.</p>
+       <h3>Using Floats to Place Elements</h3> 
+       <p>If you want two block level elements to be side by side, like columns, you need to float both elements. One left, and one right.</p>
        <img src="images/example-float-column.png" />
        </section>
+
        <!-- Clear-->
+
        <section>
          <h3>Clear</h3>
          <ul>
-         <li>Clearing tells the element on which side (right, left, both) other elements <strong>cannot</strong> appear. </li>
-         <li>If you had an image floated left, and you did not want the paragraph to appear next to it, you would add <strong>clear: left;</strong> to the paragraph.</li>
-         <li>Clearing both sides makes sure ﬂoats don’t ﬂow past the clear element.</li>
+         <li class="fragment"><span class="yellow">Clearing</span> tells the element on which side (right, left, both) other elements cannot appear. </li>
+         <li class="fragment">If you had an image floated left, and you did not want the paragraph to appear next to it, you would add <em>clear: left;</em> to the paragraph.</li>
+         <li class="fragment">Clearing <em>both</em> sides makes sure ﬂoats don’t ﬂow past the clear element.</li>
          </ul>
-<pre><code class="css">
+<pre class="fragment"><code class="css">
  p { clear: right; }
  p { clear: left; }
  p { clear: both; }
+
 </code></pre>
        </section> 
        
@@ -380,7 +422,9 @@
          <p>Let's make a simple web page layout.</p>
          <p>Refer to the html file: <a href="class4-layout.html" target="_blank">here</a>.</p>
          <p>Refer to the css file: <a href="class4-layout.css" target="_blank">here</a>.</p>
-       </section><!-- Question-->
+       </section>
+
+       <!-- Add a header ! -->
 
        <section>
         <h3>Page header bar - stuck up top!</h3>
@@ -399,7 +443,7 @@
     text-align: center;
 }</code></pre>
         </section>
-
+<!-- Bootstrap 
         <section>
           <h2>Time Permitting: Bootstrap</h2>
           <div class="left-align">
@@ -435,8 +479,11 @@
           </ol>
           <p>&nbsp;</p>
           <p class="fragment">You should be able to edit this site to your heart's content.</p>
+          </section>
+ End Bootstrap -->
+        
+        <!-- Questions --> 
 
-        </section>
         <section>
           <h2>Questions?</h2>
           <div style="font-size:1200%; height:100%; margin-top:30%" class="blue">?
